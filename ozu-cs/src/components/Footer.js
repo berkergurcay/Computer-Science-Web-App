@@ -9,6 +9,11 @@ import {
 import Dropdown from 'react-bootstrap/Dropdown'
 import Button from 'react-bootstrap/Button'
 import './Footer.css'
+import Facebook from '../images/facebook.png';
+import YouTube from '../images/youtube.png';
+import Instagram from '../images/instagam.png';
+import Twitter from '../images/twitter.png';
+
 
 class Footer extends React.Component {
     render() {
@@ -16,10 +21,10 @@ class Footer extends React.Component {
             <div id="socials">
                 
                 <BrowserRouter>
-                    <Link to='/'><img id="icons" src="" alt=""/></Link>
-                    <Link to='/'><img id="icons" src="" alt=""/></Link>
-                    <Link to='/'><img id="icons" src="" alt=""/></Link>
-                    <Link to='/'><img id="icons" src="https://banner2.kisspng.com/20171216/213/facebook-logo-png-5a35528eaa4f08.7998622015134439826976.jpg" alt=""/></Link>
+                    <Link to='/'><img id="icons" src={Facebook} alt=""/></Link>
+                    <Link to='/'><img id="icons" src={YouTube} alt=""/></Link>
+                    <Link to='/'><img id="icons" src={Instagram} alt=""/></Link>
+                    <Link to='/'><img id="icons" src={Twitter} alt=""/></Link>
                 </BrowserRouter>
 
             </div>
