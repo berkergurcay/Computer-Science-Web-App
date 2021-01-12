@@ -15,6 +15,7 @@ function App() {
     <Router>
       <Route exact path="/">
         <Header/>
+        <NavBar/>
       </Route>
 
 
