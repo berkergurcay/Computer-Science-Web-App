@@ -1,0 +1,10 @@
+#menu-outer {
+    height: 3.0rem;
+    background-color: #01022ee7;
+    padding: 0px 0px 10px 0;
+    overflow: hidden;
+}
+
+nav {
+    margin-bottom: 50px;
+}
