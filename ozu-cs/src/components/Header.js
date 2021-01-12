@@ -11,7 +11,7 @@ import {
 
 class Header extends React.Component {
     render() {
-        return  <div class="main">
+        return  <div className="main">
             <div id="ust">
                 
                 <BrowserRouter>
