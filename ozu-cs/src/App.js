@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import Sophomore from './components/Sophomere';
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,8 +22,11 @@ function App() {
       </Route>
 
 
-      <Route path="/news">
+      <Route path="/sophomore">
+          <Header/>
           <NavBar />
+          <Sophomore/>
+          <Footer />
       </Route>
 
     </Router>
