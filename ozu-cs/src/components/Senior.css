@@ -1,6 +1,6 @@
-.button-junior {
-    box-shadow:inset 0px 0px 14px -3px #d3f083;
-	background:linear-gradient(to bottom, #e67d38 5%, #f3f7ef 80%);
+.button-senior{
+    box-shadow:inset 0px 0px 14px -3px #f2fadc;
+	background:linear-gradient(to bottom, #e25137 5%, #f3f7ef 80%);
 	background-color:#dbe6c4;
 	border-radius:6px;
 	border:1px solid #b2b8ad;
@@ -41,11 +41,11 @@
     width: 80%;
 }
 
-.button-junior:hover {
-	background:linear-gradient(to bottom, #e67d38 5%, #dbe6c4 100%);
-	background-color:#e67d38;
+.button-senior:hover {
+	background:linear-gradient(to bottom, #e25137 5%, #dbe6c4 100%);
+	background-color:#e25137;
 }
-.button-junior:active {
+.button-senior:active {
 	position:relative;
 	top:1px;
 }

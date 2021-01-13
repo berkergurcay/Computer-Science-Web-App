@@ -5,6 +5,8 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Sophomore from './components/Sophomere';
 import Junior from './components/Junior';
+import Freshman from './components/Freshman';
+import Senior from './components/Senior';
 import {
   BrowserRouter as Router,
   Switch,
@@ -23,6 +25,14 @@ function App() {
       </Route>
 
 
+      <Route path="/freshman">
+          <Header/>
+          <NavBar />
+          <Freshman/>
+          <Footer />
+      </Route>
+
+
       <Route path="/sophomore">
           <Header/>
           <NavBar />
@@ -35,6 +45,15 @@ function App() {
           <NavBar/>
           <Junior/>
           <Footer/>
+      </Route>
+
+
+
+      <Route path="/senior">
+          <Header/>
+          <NavBar />
+          <Senior/>
+          <Footer />
       </Route>
 
     </Router>

@@ -40,3 +40,12 @@
     border: 1px solid #888;
     width: 80%;
 }
+
+.button:hover {
+	background:linear-gradient(to bottom, #e7d272 5%, #dbe6c4 100%);
+	background-color:#e7d272;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
