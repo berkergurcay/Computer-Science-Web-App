@@ -9,6 +9,7 @@ import {
 import Dropdown from 'react-bootstrap/Dropdown'
 import Button from 'react-bootstrap/Button'
 import './NavBar.css'
+import Sophomore from './Sophomere.js'
 
 
 class NavBar extends React.Component {
@@ -27,7 +28,7 @@ class NavBar extends React.Component {
 
                             <Dropdown.Menu>
                                 <Dropdown.Item href="#/action-1" id="classes">Freshman</Dropdown.Item>
-                                <Dropdown.Item href="#/action-2" id="classes">Sophomore</Dropdown.Item>
+                                <Dropdown.Item href="#/sophomore" id="classes">Sophomore</Dropdown.Item>
                                 <Dropdown.Item href="#/action-3" id="classes">Junior</Dropdown.Item>
                                 <Dropdown.Item href="#/action-3" id="classes">Senior</Dropdown.Item>
                             </Dropdown.Menu>

@@ -1,13 +1,4 @@
 import React from 'react'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    BrowserRouter
-} from "react-router-dom";
-import Dropdown from 'react-bootstrap/Dropdown'
-import Button from 'react-bootstrap/Button'
 import './Footer.css'
 import Facebook from '../images/facebook.png';
 import YouTube from '../images/youtube.png';
@@ -19,13 +10,11 @@ class Footer extends React.Component {
     render() {
         return  <div className="footer">
             <div id="socials">
-                
-                <BrowserRouter>
-                    <Link to='/'><img id="icons" src={Facebook} alt=""/></Link>
-                    <Link to='/'><img id="icons" src={YouTube} alt=""/></Link>
-                    <Link to='/'><img id="icons" src={Instagram} alt=""/></Link>
-                    <Link to='/'><img id="icons" src={Twitter} alt=""/></Link>
-                </BrowserRouter>
+        
+                <a href='https://www.youtube.com/c/ozyeginuni%27%3E'><img id="icons" src={YouTube} alt=""/></a>
+                <a href='https://www.instagram.com/ozyeginuni'><img id="icons" src={Instagram} alt=""/></a>
+                <a href='https://www.twitter.com/ozyeginuni'><img id="icons" src={Twitter} alt=""/></a>
+                <a href='https://www.facebook.com/ozyeginuniversitesi'><img id="icons" src={Facebook} alt=""/></a>
 
             </div>
         </div>
