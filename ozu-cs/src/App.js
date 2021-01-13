@@ -4,6 +4,7 @@ import Header from './components/Header';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Sophomore from './components/Sophomere';
+import Junior from './components/Junior';
 import {
   BrowserRouter as Router,
   Switch,
@@ -27,6 +28,13 @@ function App() {
           <NavBar />
           <Sophomore/>
           <Footer />
+      </Route>
+
+      <Route path="/junior">
+          <Header/>
+          <NavBar/>
+          <Junior/>
+          <Footer/>
       </Route>
 
     </Router>

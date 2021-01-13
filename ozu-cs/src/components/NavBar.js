@@ -31,7 +31,7 @@ class NavBar extends React.Component {
                             <Dropdown.Menu>
                                 <Dropdown.Item href="#/action-1" id="classes">Freshman</Dropdown.Item>
                                 <Dropdown.Item href="/sophomore" id="classes">Sophomore</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3" id="classes">Junior</Dropdown.Item>
+                                <Dropdown.Item href="/junior" id="classes">Junior</Dropdown.Item>
                                 <Dropdown.Item href="#/action-3" id="classes">Senior</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
