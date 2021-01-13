@@ -19,7 +19,7 @@ class NavBar extends React.Component {
         return <nav>
             <div id="menu-outer">
  
-                    <Button href="#" id="nav-button" variant="success" size="lg">
+                    <Button href="/register" id="nav-button" variant="success" size="lg">
                         Register
                     </Button>
  
@@ -37,7 +37,7 @@ class NavBar extends React.Component {
                         </Dropdown>
 
 
-                <Button href="#" id="nav-button" variant="success" size="lg">
+                <Button href="/" id="nav-button" variant="success" size="lg">
                     Home
                 </Button>
             </div>

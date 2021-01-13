@@ -7,6 +7,7 @@ import Sophomore from './components/Sophomere';
 import Junior from './components/Junior';
 import Freshman from './components/Freshman';
 import Senior from './components/Senior';
+import Register from './components/Register';
 import {
   BrowserRouter as Router,
   Switch,
@@ -53,6 +54,13 @@ function App() {
           <Header/>
           <NavBar />
           <Senior/>
+          <Footer />
+      </Route>
+
+      <Route path="/register">
+          <Header/>
+          <NavBar />
+          <Register/>
           <Footer />
       </Route>
 
