@@ -1,5 +1,6 @@
 import React from 'react'
 import './Senior.css'
+import Modal from './Modal'
 import {
     BrowserRouter as Router,
     Switch,
@@ -9,98 +10,55 @@ import {
   } from "react-router-dom";
 
 class Senior extends React.Component {
-    constructor(props){
-        super(props);
-        this.handleClick = this.handleClick.bind(this);
-    }
-    
-    handleClick(classno,mybtn,close){
-        var modal = document.getElementById(classno);
-        var btn = document.getElementById(mybtn);
-        var span = document.getElementById(close);
-
-        btn.onclick = function () {
-            modal.style.display ="block";
-        }
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        window.onClick = function (event) {
-            if(event.target == modal){
-                modal.style.display = "none";
-            }
-        }
-    }
-    
     render() {
-        return   <section>
-            <button class="button-senior" id="myBtn4" onClick={()=> this.handleClick('class4','myBtn4','close4')}>CS 391</button>
-        <div id="class4" class="modal">
-            <div class="modal-content">
-                <span id="close4">&times;</span>
-                <h1>CS 391 Web Application Development</h1>
-                <p>To introduce the students to state-of-the-practice technologies, tools and frameworks for
-                    developing Web applications.
-                </p>
-                <p>This course aims at providing students hands-on experience in Web application development,
+        return <div id='lessons'>
+            <Modal  className='senior-button' 
+                    buttonLabel={'CS 391'} title ='CS 391 Web Application Development' 
+                    description1='To introduce the students to state-of-the-practice technologies, tools and frameworks for
+                    developing Web applications.' 
+                    description2='This course aims at providing students hands-on experience in Web application development,
                     with a particular focus on client-side development by means of popular technologies and
-                    frameworks.
-                </p>
-            </div>
-        </div>
-
-        <button class="button-senior" id="myBtn" onClick={()=> this.handleClick('class1','myBtn','close')}>CS 401</button>
-        <div id="class1" class="modal">
-            <div class="modal-content">
-                <span id="close">&times;</span>
-                <h1>CS 401 Computer Science Senior Project I</h1>
-                <p>To apply computer science knowledge to design and implement a prototype of a complicated
-                    software system that solves a problem or improves/automates a process
-                </p>
-                <p>This is the first phase of the CS senior project course series meant to demonstrate the
+                    frameworks.'/>
+            
+            <Modal  className='senior-button' 
+                    buttonLabel={'CS 401'} title ='CS 401 Computer Science Senior Project I' 
+                    description1='To apply computer science knowledge to design and implement a prototype of a complicated
+                    software system that solves a problem or improves/automates a process' 
+                    description2='This is the first phase of the CS senior project course series meant to demonstrate the
                     knowledge and skills acquired in earlier coursework by applying them to tackle a concrete
                     project. Students work as part of inter -disciplinary teams, under the supervision of a faculty
                     member to plan and provide the design and a prototype implementation of a complicated
-                    system.
-                </p>
-            </div>
-        </div>
+                    system.'/>
 
-        <button class="button-senior" id="myBtn3" onClick={()=> this.handleClick('class3','myBtn3','close3')}>CS 402</button>
-        <div id="class3" class="modal">
-            <div class="modal-content">
-                <span id="close3">&times;</span>
-                <h1>CS 402 Computer Science Senior Project II</h1>
-                <p>To guide students in applying computer science knowledge to develop, test, verify and validate
-                    a complicated software system that solves a problem or improves/automates a process.
-                </p>
-                <p>This is the second phase of the CS senior project course series meant to demonstrate the
+            <Modal  className='senior-button' 
+                    buttonLabel={'CS 402'} title ='CS 402 Computer Science Senior Project II' 
+                    description1='To guide students in applying computer science knowledge to develop, test, verify and validate
+                    a complicated software system that solves a problem or improves/automates a process.' 
+                    description2='This is the second phase of the CS senior project course series meant to demonstrate the
                     knowledge and skills acquired in earlier coursework by applying them to implement and verify a
                     concrete project. Students work as part of inter-disciplinary teams, under the supervision of a
-                    faculty member to plan, develop, verify and validate a software system.
-                </p>
-            </div>
-        </div>
-
-        <button class="button-senior" id="myBtn2" onClick={()=> this.handleClick('class2','myBtn2','close2')}>CS 410</button>
-        <div id="class2" class="modal">
-            <div class="modal-content">
-                <span id="close2">&times;</span>
-                <h1>CS 410 Automata Theory and Formal Languages</h1>
-                <p>To equip students with the skill of using abstract machines and formal languages to reason
+                    faculty member to plan, develop, verify and validate a software system.'/>
+            
+            <Modal  className='senior-button' 
+                    buttonLabel={'CS 410'} title ='CS 410 Automata Theory and Formal Languages' 
+                    description1='To equip students with the skill of using abstract machines and formal languages to reason
                     about and deduce fundamental facts and limitations of computation that all current computers
-                    are based on.
-                </p>
-                <p>This course covers automata theory, Turing machine, regular languages, context-free
+                    are based on.' 
+                    description2='This course covers automata theory, Turing machine, regular languages, context-free
                     grammars, and their properties, abstract machines and their fundamental role in computer
-                    science theory, decidability and undecidability
-                </p>
-            </div>
+                    science theory, decidability and undecidability.'/>
+            
+            <Modal  className='senior-button' 
+                    buttonLabel={'CS 447'} 
+                    title ='CS 447 Computer Networkin' 
+                    description1='To learn the basics of computer networking technologies and be able to use networking tools
+                    and network programming techniques.' 
+                    description2='Principles of data communications between computers and other computing machines.
+                    Overview of computer networking. ISO-OSI layered model as a framework. Basics of the
+                    Internet applications. TCP/IP protocol suite. Network congestion and its control. Aspects of
+                    reliable and efficient data transmission. Routing. Protocol design and analysis. Data link layer.
+                    Local area networks. Assessment of network performance. Network programming exercises.'/>
         </div>
-     
-        
-    </section>
     }
 }
 

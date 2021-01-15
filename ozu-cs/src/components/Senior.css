@@ -1,4 +1,4 @@
-.button-senior{
+.senior-button {
     box-shadow:inset 0px 0px 14px -3px #f2fadc;
 	background:linear-gradient(to bottom, #e25137 5%, #f3f7ef 80%);
 	background-color:#dbe6c4;
@@ -19,33 +19,12 @@
     margin-left: 6%;
 }
 
-.modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%; 
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-}
 
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
-
-.button-senior:hover {
+.senior-button:hover {
 	background:linear-gradient(to bottom, #e25137 5%, #dbe6c4 100%);
 	background-color:#e25137;
 }
-.button-senior:active {
+.senior-button:active {
 	position:relative;
 	top:1px;
 }

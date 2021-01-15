@@ -18,10 +18,6 @@
     height: 250px;
     margin-left: 6%;
 }
-/* 
-#lessons {
-	display: inline-block;
-} */
 
 .freshman-button:hover {
 	background:linear-gradient(to bottom, #ecee7c 5%, #dbe6c4 100%);
