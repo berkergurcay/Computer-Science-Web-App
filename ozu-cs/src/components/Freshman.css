@@ -1,4 +1,4 @@
-.button-freshman{
+.freshman-button{
     box-shadow:inset 0px 0px 14px -3px #f2fadc;
 	background:linear-gradient(to bottom, #ecee7c 5%, #f3f7ef 80%);
 	background-color:#dbe6c4;
@@ -18,12 +18,16 @@
     height: 250px;
     margin-left: 6%;
 }
+/* 
+#lessons {
+	display: inline-block;
+} */
 
-.button-freshman:hover {
+.freshman-button:hover {
 	background:linear-gradient(to bottom, #ecee7c 5%, #dbe6c4 100%);
 	background-color:#ecee7c;
 }
-.button-freshman:active {
+.freshman-button:active {
 	position:relative;
 	top:1px;
 }
