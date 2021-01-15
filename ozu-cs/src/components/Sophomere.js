@@ -73,7 +73,7 @@ import {
             applications using databases.'/>
         
         <Modal  className='sophomore-button' 
-            buttonLabel={'Math 211'} title ='>MATH 211 Linear Algebra' 
+            buttonLabel={'MATH 211'} title ='>MATH 211 Linear Algebra' 
             description1='To introduce student to some of the fundamental concepts of linear algebra and useful tools to
             solve engineering problems.' 
             description2='Topics include vectors and matrices, solving linear equations, vector spaces and subspaces,
@@ -81,7 +81,7 @@ import {
 
 
         <Modal  className='sophomore-button' 
-            buttonLabel={'CS 217'} title ='Math 217 Probability and Statictics' 
+            buttonLabel={'MATH 217'} title ='Math 217 Probability and Statictics' 
             description1='To introduce students to the fundamentals of probability theory as well as statistics and the
             modeling and analysis of random phenomena encountered in different engineering problems.' 
             description2='Topics include an introduction to probability theory and mathematical statistics that emphasizes
