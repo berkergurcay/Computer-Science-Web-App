@@ -17,9 +17,9 @@ First page is home page. User can reach Ozyegin University website via links. Wh
 
 ## Responsibilities
 
-* Berker Gürçay (Responsive design, Navigation, Freshman page, Senior page)
-* Emin Sadikhov (Header, Junior page, Register page)
-* Emirhan Demir (Footer, Sophomore page, Register page)
+* Berker Gürçay (Responsive design, Navigation, Freshman page, Senior page, Home page)
+* Emin Sadikhov (Header, Junior page, Register page, Home page)
+* Emirhan Demir (Footer, Sophomore page, Register page, Home page)
 
 ## Instructions
 In order to work on code, create a fork from GitHub page. Use git for cloning the code to your local or below line : 

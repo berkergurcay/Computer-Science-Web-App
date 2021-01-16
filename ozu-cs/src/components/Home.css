@@ -1,7 +1,8 @@
 #warning {
     background-color: #e7e7e7;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 6%;
+    align-self: center;
     padding-left: 30px;
 }
 
@@ -24,23 +25,25 @@ label.anaTitle{
 
     background-size: 100%;
     height: 36rem;
-    margin-left: 15%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 3%;
 }
 
 #div2 {
     margin-top: 25px;
-    /* background-color: #e7e7e7; */
-    margin-left: 3%;
-    margin-right: 10%;
+    background-color: #e7e7e7;
+    margin-left: 5%;
+    margin-right: 6%;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
 #nodecoration{
     text-decoration: none;
-    margin-left: 23%;
-    margin-right: 23%;
+    margin-left: 5%;
+    margin-right: 6%;
+    float: center;
+    padding-left: 75px;
     color: #333333; font-weight:bold;
 }
