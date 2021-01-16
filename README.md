@@ -1,2 +1,45 @@
 # CS-391
-Web application with React JS
+
+# CS Website for Ozyegin University
+
+## Introduction
+
+This project aims to create a website for Computer Science undergraduate students at Özyeğin University. In this website, students find information about their courses in their curriculum.
+
+## Scenario
+First page is home page. User can reach Ozyegin University website via links. When user presses first heading about COVID-19, user is redirected to Ozyegin University website. When user registers, web-page stores the information of the student. This information will be later used to find peers. Classes tab provides breif information about classes from freshman to senior. 
+
+## Members
+
+* Berker Gürçay
+* Emin Sadikhov
+* Emirhan Demir
+
+## Responsibilities
+
+* Berker Gürçay (Responsive design, Navigation, Freshman page, Senior page)
+* Emin Sadikhov (Header, Junior page, Register page)
+* Emirhan Demir (Footer, Sophomore page, Register page)
+
+## Instructions
+In order to work on code, create a fork from GitHub page. Use git for cloning the code to your local or below line : 
+
+```
+git clone https://github.com/SadikhovEmin/Web_Application_Development.git
+```
+
+Open Visual Studio Code after running above mentioned command. You can use ```npm start``` command from terminal in VSCode. 
+If you face with error, you need to install below mentioned dependencies. 
+
+
+## Libraries
+React
+React Router 
+ReactStrap
+Bootstrap
+
+## Tools
+Recomended IDE is Visual Studio Code. Other IDEs/editors can also be used
+
+
+
