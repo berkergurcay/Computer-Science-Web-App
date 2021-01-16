@@ -1,0 +1,46 @@
+#warning {
+    background-color: #e7e7e7;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 30px;
+}
+
+label.anaTitle{
+    color: #4d4d4d;
+    cursor: pointer;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: normal;
+
+    line-height: 1.5;
+    margin-bottom: 0;
+    margin-left: 15%;
+    padding:  1% 1% 1% 1%;
+    font-family: 'Roboto', sans-serif;
+    color: #333333; font-weight:bold;
+}
+
+#photo{
+
+    background-size: 100%;
+    height: 36rem;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-top: 3%;
+}
+
+#div2 {
+    margin-top: 25px;
+    /* background-color: #e7e7e7; */
+    margin-left: 3%;
+    margin-right: 10%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#nodecoration{
+    text-decoration: none;
+    margin-left: 23%;
+    margin-right: 23%;
+    color: #333333; font-weight:bold;
+}

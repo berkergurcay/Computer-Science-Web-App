@@ -1,6 +1,7 @@
 import React from 'react'
 import './Freshman.css'
 import Modal from './Modal'
+import { Container, Row, Col } from 'reactstrap';
 import {
     BrowserRouter as Router,
     Switch,

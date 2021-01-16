@@ -8,6 +8,7 @@ import Junior from './components/Junior';
 import Freshman from './components/Freshman';
 import Senior from './components/Senior';
 import Register from './components/Register';
+import Home from './components/Home';
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,6 +23,7 @@ function App() {
       <Route exact path="/">
         <Header/>
         <NavBar/>
+        <Home/>
         <Footer/>
       </Route>
 
