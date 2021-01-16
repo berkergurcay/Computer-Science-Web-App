@@ -1,6 +1,7 @@
 import React from 'react'
 import './Freshman.css'
 import Modal from './Modal'
+import Responsive from "./Responsive";
 import { Container, Row, Col } from 'reactstrap';
 import {
     BrowserRouter as Router,
@@ -12,7 +13,8 @@ import {
 
 class Freshman extends React.Component {
     render() {
-        return <div id='lessons'>
+        return <Container id='lessons'>
+        <Row><Col sm="12" md="12" lg="12">
             <Modal  className='freshman-button' 
                     buttonLabel={'CS 101'} title ='CS 101 Computer Programming' 
                     description1='To introduce the student to the fundamental concepts of computer programming and algorithm
@@ -64,7 +66,8 @@ class Freshman extends React.Component {
                     description2='This is an introductory, calculus-based physics course for engineering majors, which focuses on
                                       electricity and magnetism.'/>
             
-        </div>
+            </Col> </Row>         
+        </Container>
     }
 }
 

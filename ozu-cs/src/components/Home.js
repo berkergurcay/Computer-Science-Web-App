@@ -2,22 +2,11 @@ import React from 'react'
 import './Home.css'
 import photo from '../images/ozu-eng.png';
 
-import Register from './Register';
 
 
 class Home extends React.Component {
     render() {
 
-        <Container> 
-            <Row>
-                <Col sm="6" md="4"  lg="2"><img src={bag} alt="bag" /></Col>
-                <Col sm="6" md="4"  lg="2"><img src={camera} alt="camera" /></Col>
-                <Col sm="6" md="4"  lg="2"><img src={shoe} alt="shoe" /></Col>
-                <Col sm="6" md="4"  lg="2"><img src={tablet} alt="tablet" /></Col>
-                <Col sm="6" md="4"  lg="2"><img src={toy} alt="toy" /></Col>
-                <Col sm="6" md="4"  lg="2"><img src={watch} alt="watch" /></Col>
-            </Row>
-        </Container>
         return <div>
         <div id="warning">
             <label class="anaTitle" id="page-title" >

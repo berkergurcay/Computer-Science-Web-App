@@ -1,20 +1,15 @@
 import React from 'react'
 import './Sophomore.css'
 import Modal from './Modal'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    BrowserRouter
-  } from "react-router-dom";
+import { Container, Row, Col } from 'reactstrap'
 
   class Sophomore extends React.Component {
 
     
     
     render() {
-        return <div>
+        return <Container id='lessons'>
+        <Row><Col sm="12" md="12" lg="12">
         <Modal  className='sophomore-button' 
         buttonLabel={'CS 112'} title ='CS 112 Discrete Mathematics' 
         description1='To introduce the student to the fundamental concepts of computer programming and algorithm
@@ -96,7 +91,8 @@ import {
             intervals.'/>
 
         
-        </div>
+        </Col> </Row>         
+        </Container>
         
         
         

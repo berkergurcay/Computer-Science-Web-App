@@ -1,17 +1,12 @@
 import React from 'react'
 import './Senior.css'
 import Modal from './Modal'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    BrowserRouter
-  } from "react-router-dom";
+import { Container, Row, Col } from 'reactstrap';
 
 class Senior extends React.Component {
     render() {
-        return <div id='lessons'>
+        return <Container id='lessons'>
+        <Row><Col sm="12" md="12" lg="12">
             <Modal  className='senior-button' 
                     buttonLabel={'CS 391'} title ='CS 391 Web Application Development' 
                     description1='To introduce the students to state-of-the-practice technologies, tools and frameworks for
@@ -58,7 +53,8 @@ class Senior extends React.Component {
                     Internet applications. TCP/IP protocol suite. Network congestion and its control. Aspects of
                     reliable and efficient data transmission. Routing. Protocol design and analysis. Data link layer.
                     Local area networks. Assessment of network performance. Network programming exercises.'/>
-        </div>
+                    </Col> </Row>         
+        </Container>
     }
 }
 
