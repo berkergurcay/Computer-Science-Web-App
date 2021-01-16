@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import './Register.css'
-
 
 
 function validate(name, surname, email, snumber, number){
@@ -31,7 +31,7 @@ function validate(name, surname, email, snumber, number){
     return errors;
 }
 
-class Register extends React.Component {
+class Register extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -40,6 +40,7 @@ class Register extends React.Component {
             email:"",
             snumber:"",
             number:"",
+            year:"",
 
             errors: []
         };
@@ -47,13 +48,22 @@ class Register extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    handleChange(e) {
+        this.setState({year: e.target.value});
+    }
+
     handleSubmit = e => {
         e.preventDefault();
+
+
+        alert('Reha')
 
         const {name, surname, email, snumber, number} = this.state;
 
         const errors = validate(name, surname, email, snumber, number);
         if (errors.length > 0){
+
+            alert('1')
             this.setState({errors});
             return;
         }else{
@@ -63,52 +73,61 @@ class Register extends React.Component {
                 "email": email,
                 "snumber": snumber,
                 "Number": number,
-                "class": document.getElementById("class").value,
+                "class": this.year,
             };
             this.setState({errors: []})
+            alert('2')
             localStorage.setItem(student.snumber,JSON.stringify(student));
-            document.getElementById("action-form").action = "/register"
+            // document.getElementById("register").action = "/register"
         }
-
     }
-
- 
-        
 
 
     render() {
         const { errors } = this.state;
-        return <div id="register">
-            <form onSubmit={this.handleSubmit} className="form-login" id="action-form">
+        return (    
+            <Form id='register' onSubmit={this.handleSubmit}>
                 {errors.map(error => (
-                    <p key= {error}>Error: {error}</p>
+                    <p key= {error} id='warning'>{error}</p>
                 ))} 
-                <label htmlFor="name">Name</label>
-                <input type="text" value={this.state.name} onChange={evt => this.setState({ name: evt.target.value}) }id="name" name="firstname" placeholder="Name"></input>
-
-                <label htmlFor="surname">Surname</label>
-                <input type="text" value={this.state.surname} onChange={evt => this.setState({ surname: evt.target.value}) } id="surname" name="surname" placeholder="Surname"></input>
-
-                <label htmlFor="email">Email</label>
-                <input type="text" value={this.state.email} onChange={evt => this.setState({ email: evt.target.value}) } id="email" name="email" placeholder="Email"></input>
-
-                <label htmlFor="snumber">Student Number</label>
-                <input type="text" value={this.state.snumber} onChange={evt => this.setState({ snumber: evt.target.value}) } id="snumber" name="snumber" placeholder="Student Number (starts with s)"></input>
-
-                <label htmlFor="number">Number</label>
-                <input type="text" value={this.state.number} onChange={evt => this.setState({ number: evt.target.value}) } id="number" name="number" placeholder="Phone Number"></input>
+              <FormGroup>
+                <Label>Name</Label>
+                <Input type="text" placeholder="Name" />
+              </FormGroup>
+        
+              <FormGroup>
+                <Label>Surname</Label>
+                <Input type="text"  placeholder="Surname" />
+              </FormGroup>
+        
+              <FormGroup>
+                <Label>Email</Label>
+                <Input type="text" placeholder="Email" />
+              </FormGroup>
+        
+              <FormGroup>
+                <Label>Student number</Label>
+                <Input type="text" placeholder="Student number" />
+              </FormGroup>
+        
+              <FormGroup>
+                <Label>Number</Label>
+                <Input type="text" placeholder="Phone number" />
+              </FormGroup>
+        
+              <FormGroup>
+                <Label for="exampleSelect">Class</Label>
+                <Input type="select" id="class" onChange={this.handleChange}>
+                  <option>Freshman</option>
+                  <option>Sophomore</option>
+                  <option>Junior</option>
+                  <option>Senior</option>
+                </Input>
+              </FormGroup>
             
-                <label htmlFor="class">Class</label>
-                <select id="class" name="country">
-                    <option value="freshman">Freshman</option>
-                    <option value="sophomore">Sophomore</option>
-                    <option value="junior">Junior</option>
-                    <option value="senior">Senior</option>
-                </select>
-
-                <input type="submit" value="Submit"></input>
-            </form>
-        </div>
+              <Input id='submit' type='submit'>Submit</Input>
+            </Form>
+          );
     }
 }
 
