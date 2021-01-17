@@ -64,7 +64,7 @@ export default class Register extends Component {
 
       
 
-        if(this.state.name === "" || this.state.surname === '' || this.state.email === '' || this.state.snumber === '' || this.state.phone === '' || this.state.year === '' ){
+        if(this.state.name === "" || this.state.surname === '' || this.state.email === '' || this.state.snumber === '' || this.state.phone === '' ){
           alert("Fields must not be empty");
         }else if(localStorage.getItem(this.state.snumber)){
             alert("There is already one user with same student number.")
