@@ -55,16 +55,16 @@ export default class Register extends Component {
     }
 
     onChangeYear(e){
-      this.setState({ year: e.target.value })
+      this.setState({ year: e.target.value.toLowerCase() })
     }
 
     onSubmit(e) {
         e.preventDefault();
-       
+        const years =["freshman","sophomore","junior","senior"]
 
       
 
-        if(this.state.name === "" || this.state.surname === '' || this.state.email === '' || this.state.snumber === '' || this.state.phone === '' ){
+        if(this.state.name === "" || this.state.surname === '' || this.state.email === '' || this.state.snumber === '' || this.state.phone === ''|| this.state.year === '' ){
           alert("Fields must not be empty");
         }else if(localStorage.getItem(this.state.snumber)){
             alert("There is already one user with same student number.")
@@ -78,9 +78,10 @@ export default class Register extends Component {
 
         }else if(this.state.phone.length !== 11) {
           alert("Phone number must be 11 digit")
+        }else if(!years.includes(this.state.year.toLowerCase())){
+            alert("Year must be one of 'freshman/sophomore/junior/senior' ")
         }
-
-          else{
+        else{
 
           this.setState({
             name: '',
@@ -136,15 +137,7 @@ export default class Register extends Component {
                     </div>
                     <div className="form-group">
                         <label>Year</label>
-                        <select className="form-control" value={this.state.year} onChange={this.onChangeYear}>
-                        <option>Freshman</option>
-                        <option>Sophomore</option>
-                        <option>Junior</option>
-                        <option>Senior</option>
-                        </select>
-                        
-                        
-                        
+                        <input type="text" className="form-control" value={this.state.year} onChange={this.onChangeYear} />
                     </div>
                     <button type="submit" className="btn btn-primary btn-block">Submit</button>
                 </form>
