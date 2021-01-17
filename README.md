@@ -25,18 +25,19 @@ First page is home page. User can reach Ozyegin University website via links. Wh
 In order to work on code, create a fork from GitHub page. Use git for cloning the code to your local or below line : 
 
 ```
-git clone https://github.com/SadikhovEmin/Web_Application_Development.git
+git clone https://github.com/berkergurcay/CS-391.git
 ```
 
-Open Visual Studio Code after running above mentioned command. You can use ```npm start``` command from terminal in VSCode. 
+Open Visual Studio Code after running above mentioned command.You will need to run command ```npm install``` to install project to local machine. 
+You can use ```npm start``` command from terminal in VSCode to open web-site. 
 If you face with error, you need to install below mentioned dependencies. 
 
 
 ## Libraries
-React
-React Router 
-ReactStrap
-Bootstrap
+* React
+* React Router 
+* ReactStrap
+* Bootstrap
 
 ## Tools
 Recomended IDE is Visual Studio Code. Other IDEs/editors can also be used
