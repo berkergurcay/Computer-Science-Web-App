@@ -1,6 +1,5 @@
-# CS-391
 
-# CS Website for Ozyegin University
+# Computer Science Department Website for Ozyegin University
 
 ## Introduction
 
