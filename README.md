@@ -24,7 +24,7 @@ First page is home page. User can reach Ozyegin University website via links. Wh
 In order to work on code, create a fork from GitHub page. Use git for cloning the code to your local or below line : 
 
 ```
-git clone https://github.com/berkergurcay/CS-391.git
+https://github.com/berkergurcay/Computer-Science-Web-App.git
 ```
 
 Open Visual Studio Code after running above mentioned command.You will need to run command ```npm install``` to install project to local machine. 
